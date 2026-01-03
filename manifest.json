@@ -1,0 +1,7 @@
+{
+    "function_name": "Typescript Function Template",
+    "description": "A template for creating Typescript functions",
+    "financial_data_keys": [],
+    "call_arguments_schema": {},
+    "enforce_schemas": false
+}
