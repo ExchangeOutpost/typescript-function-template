@@ -19,7 +19,7 @@ jobs:
         cache: 'npm'
     
     - name: Install dependencies
-      run: npm install
+      run: npm install && npm install esbuild @extism/js-pdk --save-dev
     
     - name: Build
       run: npm run build
