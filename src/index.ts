@@ -1,10 +1,9 @@
-import { FunctionArgs } from "exchange-outpost-abi";
+import { FunctionArgs, output } from "exchange-outpost-abi";
 
 function run() {
-  const input = Host.inputString();
-  const args = FunctionArgs.fromJsonString(input);
+  const args = FunctionArgs.get();
 
-  Host.outputString(JSON.stringify({ status: 'ok'}));
+  output({"status": "ok"});
 }
 
 module.exports = { run };

@@ -4,7 +4,7 @@
   "main": "./src/plugin.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npx degit github:ExchangeOutpost/exchange-outpost-abi/typescript#0.1.3 node_modules/exchange-outpost-abi && cd node_modules/exchange-outpost-abi && npm install && npm run build",
+    "postinstall": "npx degit github:ExchangeOutpost/exchange-outpost-abi/typescript#0.1.4 node_modules/exchange-outpost-abi && cd node_modules/exchange-outpost-abi && npm install && npm run build",
     "build": "node esbuild.js && extism-js dist/index.js -i src/index.d.ts -o dist/plugin.wasm"
   },
   "keywords": [],
